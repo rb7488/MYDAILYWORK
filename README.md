@@ -1,106 +1,81 @@
-# MYDAILYWORK
-# Titanic Survival Prediction 🚢
+# MYDAILYWORK 🚀  
+**Data Science Internship Project Repository**
 
-## 📌 Project Overview
-
-This project aims to build a machine learning model that predicts whether a passenger survived the Titanic disaster based on various features such as passenger class, gender, age, family size, fare, and port of embarkation.
-
-This is a classic binary classification problem and is widely used as an introductory project in Data Science and Machine Learning.
+This repository contains all the tasks and projects completed as part of my **Data Science Internship**.  
+Each project focuses on applying data science and machine learning concepts to real-world problems, with an emphasis on understanding data, building models, and evaluating results using appropriate metrics.
 
 ---
 
-## 📊 Dataset
+## 📁 Projects Overview
 
-* Source: Kaggle (Titanic Dataset)
-* Total Records: 418 passengers
-* Target Variable: `Survived`
+### 1️⃣ Titanic Survival Prediction
+**Type:** Binary Classification  
+**Objective:** Predict whether a passenger survived the Titanic disaster based on demographic and travel-related features.
 
-  * `0` → Did not survive
-  * `1` → Survived
+**Key Concepts Used:**
+- Data cleaning & preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature encoding
+- Logistic Regression
+- Model evaluation using accuracy, confusion matrix
 
-### Key Features Used
-
-* `Pclass` – Passenger class
-* `Sex` – Gender
-* `Age` – Age of passenger
-* `SibSp` – Number of siblings/spouses onboard
-* `Parch` – Number of parents/children onboard
-* `Fare` – Ticket fare
-* `Embarked` – Port of embarkation
+📂 Folder: `01_Titanic_Survival_Prediction`
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+### 2️⃣ Sales Prediction
+**Type:** Regression  
+**Objective:** Predict product sales based on advertising spend across different media channels.
 
-During EDA, the following insights were observed:
+**Key Concepts Used:**
+- Exploratory Data Analysis
+- Correlation analysis
+- Simple & Multiple Linear Regression
+- Model evaluation using R² and RMSE
 
-* Female passengers had a significantly higher survival rate than males.
-* First-class passengers showed better survival chances compared to second and third class.
-* Missing values were present in Age, Fare, and Cabin columns.
-* The Cabin column had excessive missing values and was removed.
-
----
-
-## 🧹 Data Preprocessing
-
-* Dropped columns: `PassengerId`, `Name`, `Ticket`, `Cabin`
-* Missing values handled:
-
-  * `Age` filled using median
-  * `Fare` filled using median
-* Categorical variables encoded using Label Encoding:
-
-  * `Sex`
-  * `Embarked`
+📂 Folder: `02_Sales_Prediction`
 
 ---
 
-## 🤖 Model Building
+### 3️⃣ Credit Card Fraud Detection
+**Type:** Imbalanced Classification  
+**Objective:** Identify fraudulent credit card transactions while handling extreme class imbalance.
 
-* Model Used: **Logistic Regression**
-* Train-Test Split: 80% training, 20% testing
-* Evaluation Metrics:
+**Key Concepts Used:**
+- Class imbalance analysis
+- Logistic Regression (baseline & tuned)
+- Random Forest (baseline & tuned)
+- Threshold tuning
+- Precision, Recall, F1-score, Confusion Matrix
+- Business-oriented model comparison
 
-  * Accuracy
-  * Confusion Matrix
-  * Precision, Recall, F1-score
-
----
-
-## 📈 Model Performance
-
-* Accuracy achieved: **100%**
-* Confusion Matrix and Classification Report indicated perfect precision and recall on the test set.
-
-⚠️ **Note:**
-The high accuracy is influenced by strong feature correlations and dataset bias (particularly gender). Results should be interpreted cautiously for real-world generalization.
+📂 Folder: `03_Credit_Card_Fraud_Detection`
 
 ---
 
-## 🧠 Key Learnings
-
-* Importance of EDA before model building
-* Handling missing data effectively
-* Feature selection and encoding
-* Understanding evaluation metrics beyond accuracy
-
----
-
-## 🛠️ Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib & Seaborn
-* Scikit-learn
+## 🛠️ Tools & Technologies
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Imbalanced-learn
+- Matplotlib
+- Jupyter Notebook
 
 ---
 
-## 📌 Conclusion
-
-This project demonstrates a complete end-to-end machine learning workflow, from data understanding and preprocessing to model training and evaluation. It serves as a strong foundational project for beginners in Data Science.
+## 🎯 Key Learnings
+- End-to-end data science workflow
+- Handling real-world imbalanced datasets
+- Model comparison beyond accuracy
+- Importance of business context in model selection
+- Threshold tuning for classification problems
 
 ---
 
-📎 **Internship Task – MyDailyWork Data Science Internship**
+## 📌 About the Internship
+This repository represents my **daily work and learning outcomes** during the Data Science Internship, focusing on building strong foundations in data analysis, machine learning, and applied problem-solving.
 
+---
+
+📎 **Internship Repository – MYDAILYWORK**
